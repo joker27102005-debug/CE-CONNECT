@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Academic Insight | Institutional Achievement &amp; Research</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-lowest": "#ffffff",
+                    "surface": "#f7f9fb",
+                    "on-surface": "#191c1e",
+                    "primary-fixed-dim": "#bec6e0",
+                    "on-secondary": "#ffffff",
+                    "surface-tint": "#565e74",
+                    "outline": "#76777d",
+                    "on-secondary-container": "#006f66",
+                    "tertiary-container": "#271901",
+                    "on-secondary-fixed": "#00201d",
+                    "tertiary-fixed": "#fcdeb5",
+                    "on-error": "#ffffff",
+                    "surface-bright": "#f7f9fb",
+                    "inverse-surface": "#2d3133",
+                    "background": "#f7f9fb",
+                    "on-primary-fixed": "#131b2e",
+                    "tertiary-fixed-dim": "#dec29a",
+                    "on-tertiary": "#ffffff",
+                    "primary": "#000000",
+                    "inverse-primary": "#bec6e0",
+                    "surface-container": "#eceef0",
+                    "outline-variant": "#c6c6cd",
+                    "primary-container": "#131b2e",
+                    "on-tertiary-fixed": "#271901",
+                    "on-error-container": "#93000a",
+                    "secondary": "#006a61",
+                    "surface-variant": "#e0e3e5",
+                    "on-primary": "#ffffff",
+                    "inverse-on-surface": "#eff1f3",
+                    "on-primary-fixed-variant": "#3f465c",
+                    "secondary-container": "#86f2e4",
+                    "on-primary-container": "#7c839b",
+                    "tertiary": "#000000",
+                    "on-secondary-fixed-variant": "#005049",
+                    "on-surface-variant": "#45464d",
+                    "secondary-fixed": "#89f5e7",
+                    "on-tertiary-fixed-variant": "#574425",
+                    "surface-dim": "#d8dadc",
+                    "surface-container-high": "#e6e8ea",
+                    "surface-container-highest": "#e0e3e5",
+                    "error-container": "#ffdad6",
+                    "on-tertiary-container": "#98805d",
+                    "primary-fixed": "#dae2fd",
+                    "surface-container-low": "#f2f4f6",
+                    "error": "#ba1a1a",
+                    "secondary-fixed-dim": "#6bd8cb",
+                    "on-background": "#191c1e"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "base": "8px",
+                    "container-max": "1280px",
+                    "margin-desktop": "40px",
+                    "gutter": "24px",
+                    "margin-mobile": "16px",
+                    "section-gap": "80px"
+            },
+            "fontFamily": {
+                    "body-lg": ["Inter"],
+                    "caption": ["Inter"],
+                    "headline-md": ["Newsreader"],
+                    "body-md": ["Inter"],
+                    "display-lg": ["Newsreader"],
+                    "headline-lg-mobile": ["Newsreader"],
+                    "headline-lg": ["Newsreader"],
+                    "label-md": ["Inter"]
+            },
+            "fontSize": {
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "caption": ["12px", {"lineHeight": "16px", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "500"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        body { background-color: #f7f9fb; }
+        .hero-gradient {
+            background: linear-gradient(180deg, rgba(25,28,30,0) 0%, rgba(25,28,30,0.8) 100%);
+        }
+    </style>
+</head>
+<body class="font-body-md text-on-surface selection:bg-secondary-container">
+<!-- TopNavBar -->
+<header class="bg-surface-container-lowest dark:bg-inverse-surface border-b border-outline-variant dark:border-outline docked full-width top-0 z-50">
+<div class="flex justify-between items-center px-margin-desktop w-full max-w-container-max mx-auto h-20">
+<div class="flex items-center gap-8">
+<a class="font-headline-md text-headline-md font-bold text-on-surface dark:text-inverse-on-surface" href="#">Academic Insight</a>
+<!-- Search Bar (on_left per JSON) -->
+<div class="hidden md:flex items-center bg-surface-container-low px-4 py-2 rounded-lg border border-outline-variant w-80">
+<span class="material-symbols-outlined text-outline mr-2" data-icon="search">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-body-md w-full" placeholder="Search research or departments..." type="text"/>
+</div>
+</div>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="text-secondary dark:text-secondary-fixed border-b-2 border-secondary dark:border-secondary-fixed pb-1 font-label-md text-label-md hover:text-secondary transition-colors duration-200" href="#">Explore</a>
+<a class="text-on-surface-variant dark:text-surface-variant font-medium font-label-md text-label-md hover:text-secondary transition-colors duration-200" href="#">Departments</a>
+<a class="text-on-surface-variant dark:text-surface-variant font-medium font-label-md text-label-md hover:text-secondary transition-colors duration-200" href="#">Archives</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="hidden lg:block text-on-surface-variant font-label-md text-label-md hover:text-secondary transition-colors">Faculty Login</button>
+<button class="bg-secondary text-on-secondary px-6 py-2 rounded-lg font-label-md text-label-md hover:opacity-90 transition-opacity">Request to Post</button>
+</div>
+</div>
+</header>
+<main class="w-full max-w-container-max mx-auto px-margin-desktop pb-section-gap">
+<!-- Hero Section: Featured Achievement -->
+<section class="mt-base rounded-xl overflow-hidden relative group h-[500px] mb-section-gap">
+<img alt="Featured Achievement" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A sophisticated scientific laboratory scene featuring a diverse team of researchers working with advanced laser spectroscopy equipment. The lighting is crisp and professional with a cool blue and teal palette. The composition is cinematic and editorial, highlighting a breakthrough moment in quantum physics research within a modern academic setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZWVW_Mn3UGXc9dY-hh9DLRg-MweI4Loa3mo3w22XnwRJNG2Fxa38pwM_CcpbK8zMZgZtI2lgmA9939WH9AQfm4FOcQ6h2M48vXoebr-vYzCbp363gP1ActmDXk67wh0OgDLs2DrS9uDu3vxJXFp8xctXH03PlFqtKYZ7pYEf3n_YwiyQTzuwpDIBRsCCOmtt1ymOyQRCguQkIwwAoDpu-1rnMqWzPHTBwSbBoskl5AA1wyxLFbP5JpizPaZKn2ujAz-81IsDNFLk"/>
+<div class="absolute inset-0 hero-gradient flex flex-col justify-end p-12">
+<div class="max-w-3xl">
+<span class="bg-secondary text-on-secondary px-3 py-1 rounded-sm text-label-md font-label-md uppercase mb-4 inline-block">Featured Achievement</span>
+<h1 class="font-display-lg text-display-lg text-white mb-4">Quantum Computing Research Center Secures $20M Multi-Year Grant</h1>
+<p class="text-white/90 font-body-lg text-body-lg mb-6 line-clamp-2">The Department of Advanced Physics has been awarded a landmark grant to pioneer fault-tolerant quantum architectures, marking a new era for institutional research excellence.</p>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-high border-2 border-white overflow-hidden">
+<img alt="Author" data-alt="Close-up headshot of a distinguished male faculty member with graying hair and glasses, representing expertise and academic authority. The background is a blurred office filled with leather-bound books, conveying a sense of intellectual rigor and deep scholarly experience." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCF62QqMS4mPezEW7LoNpTdFfHDGIkGZoW_VJc2K7_XUeWCwEVOVTIxUTwn26XVtFSg1UDSaAaELLBHmbIgjO1Ye_pmOlEebLtiL2n7ozJ5HGcN-MsTa386D4a7CfNIwRMZ3m-oziRZWSD9PmEbzoOPh4Bm1qALHQm9ON9l6esDVwygWc2QsYqJ3kBiGiPTX-IBvBahhFJ2z7FxnwU_o8y1RFKmFV9vlbaFMUNP5dCLCt5iC_w-yjBome1hVx8I-98kKmVA32wbwkw"/>
+</div>
+<div class="text-white">
+<p class="font-label-md text-label-md">Dr. Julian Sterling</p>
+<p class="text-caption font-caption opacity-80">Dean of Sciences • 4 min read</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Category Filters -->
+<nav class="flex flex-wrap items-center justify-between gap-4 mb-12 border-b border-outline-variant pb-6">
+<div class="flex gap-4">
+<button class="px-6 py-2 rounded-full bg-primary text-on-primary font-label-md text-label-md">All Posts</button>
+<button class="px-6 py-2 rounded-full border border-outline-variant text-on-surface-variant font-label-md text-label-md hover:bg-surface-variant transition-colors">Achievements</button>
+<button class="px-6 py-2 rounded-full border border-outline-variant text-on-surface-variant font-label-md text-label-md hover:bg-surface-variant transition-colors">Departments</button>
+<button class="px-6 py-2 rounded-full border border-outline-variant text-on-surface-variant font-label-md text-label-md hover:bg-surface-variant transition-colors">Research</button>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined" data-icon="filter_list">filter_list</span>
+<span class="font-label-md text-label-md">Sort by Recent</span>
+</div>
+</nav>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Main Content Feed -->
+<div class="lg:col-span-8 space-y-12">
+<!-- Newsletter Card 1 -->
+<article class="group grid grid-cols-1 md:grid-cols-5 gap-8 bg-surface-container-lowest p-6 rounded-xl border border-outline-variant hover:shadow-xl transition-shadow">
+<div class="md:col-span-2 overflow-hidden rounded-lg aspect-[4/3]">
+<img alt="Student Research" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A group of diverse university students collaborating around a large wooden table in a high-ceilinged library. Sunlight streams through tall windows, illuminating dust motes and stacks of academic journals. The atmosphere is focused and collaborative, with a modern editorial aesthetic in clean white and soft gray tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6Rj0vQbC--y-21mE3m-zS_wUalS5gqBfOoqfXQuB2b5IScxhKaT7DcVFGsj9ReNTLeILUJ2j5KTT9-sVfIzgTE5qW6uQhzfwX1ytwiRukyNUb1OAH6gJKOGjMGsJCN0XMYQSx7Wv5BkCYpeAXi9BUDbono-fh-SIFa5xunjPD8WUftXPI4xM-xp_Hvm4Cw8Skkig7nMzPdiWwoFyHv1zsneuHwMx94yhyoDf5LyL52xOXufPItf4hSO8y3wmqxP_T38LcyHcsJBY"/>
+</div>
+<div class="md:col-span-3 flex flex-col justify-between py-2">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="text-secondary font-label-md text-label-md">Achievements</span>
+<button class="flex items-center gap-1 text-secondary font-label-md text-label-md hover:underline">
+<span class="material-symbols-outlined text-[18px]" data-icon="person_add">person_add</span>
+                                    Follow
+                                </button>
+</div>
+<h2 class="font-headline-md text-headline-md mb-3 group-hover:text-secondary transition-colors">Undergraduate Humanities Symposium: Call for Abstracts</h2>
+<p class="text-on-surface-variant font-body-md text-body-md line-clamp-3 mb-4">The annual symposium returns this spring, focusing on the intersection of digital ethics and historical narratives. Students from all departments are invited to submit their original work.</p>
+</div>
+<div class="flex items-center gap-3">
+<img alt="Poster" class="w-8 h-8 rounded-full" data-alt="Portrait of a young female student leader with a warm, confident expression. She is in a blurred campus setting, wearing a simple navy blazer. The lighting is natural and soft, emphasizing clarity and intellectual energy in a modern academic context." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQoUdz3mHi8uOUNiE8aMREF2pABIdmVKjfEh6YYeknVfAlby3cdB5Xd99d9byhqjuCHQCfNJYS87eyswsR3iTH1J45X2cdPehUF5id6tKFFx9X2Slai3N6NhvlkpiszHz1jpASiMxdAlOkpiYhyW9falJBtSY73gzlW-4gryM0myaxinuzUw0Z72E61HPwJ51dIx7xTT_9lRITYET7Cu-GXSrFAzDC7vYifw613HDtaV_VF6mtz6r24KlxnXonsrEpd-7T8FY4Eyg"/>
+<span class="text-caption font-caption text-outline">Posted by Elena Vance • 3 days ago</span>
+</div>
+</div>
+</article>
+<!-- Newsletter Card 2 -->
+<article class="group grid grid-cols-1 md:grid-cols-5 gap-8 bg-surface-container-lowest p-6 rounded-xl border border-outline-variant hover:shadow-xl transition-shadow">
+<div class="md:col-span-2 overflow-hidden rounded-lg aspect-[4/3]">
+<img alt="Data Analytics" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Modern data visualization on a large digital screen showing complex interconnected networks and flow charts in shades of navy, teal, and charcoal. The environment is a clean, minimalist research facility with reflection on glass surfaces. The mood is highly technical and sophisticated, representing high-level academic data analysis." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8q7jK2H9yZslL68Toi5-AF7UK9ZCdzhoc5H0gOvyfmDP1f0GjZwLNqe6OXgsWgh7UHARWxUDEIJRCTLDGxT5p6yV7uLvy46Ij034iArRRIOlte40daGfTviQNn62Js6fIPtBEA7FxdusgyNM4itFh0IKrFx_GH_5rRhYkoRlexT8wksA5x8NqI6G-PsWePM9HJEOQqZYQoXEMeDqsmlQBQG5LuNHoPCmlV-jr50jRt56MVpBYUh1LlAYlJ5xnDx39Z1Xh6iAcNps"/>
+</div>
+<div class="md:col-span-3 flex flex-col justify-between py-2">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="text-secondary font-label-md text-label-md">Research</span>
+<button class="flex items-center gap-1 text-secondary font-label-md text-label-md hover:underline">
+<span class="material-symbols-outlined text-[18px]" data-icon="person_add">person_add</span>
+                                    Follow
+                                </button>
+</div>
+<h2 class="font-headline-md text-headline-md mb-3 group-hover:text-secondary transition-colors">Mapping the Neural Correlates of Linguistic Intuition</h2>
+<p class="text-on-surface-variant font-body-md text-body-md line-clamp-3 mb-4">New findings from the Cognitive Science Lab suggest that linguistic processing may be more decentralized than previously hypothesized, using fMRI data from over 500 participants.</p>
+</div>
+<div class="flex items-center gap-3">
+<img alt="Poster" class="w-8 h-8 rounded-full" data-alt="Close-up portrait of a male researcher in a lab coat, looking intently at a tablet. The background is a crisp white laboratory with stainless steel details. The lighting is high-key and professional, projecting an image of scientific precision and modern academic investigation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAycP3CyWNUGz5Q4mhz4mYhlJtug02XTRt_z5-NnMMgFDuxN9L34aLMQuudnuSecwRRbiiJSdwObmeO7umbtwNbj_08VvLXcaqYN6fwmelbMVsuhEfZGMx9EvN9dRrRGxSS4eZKunXKPB77UuT6ioUzg6qdHwSftmbLwxkCEeaVGqWlSD9SN68HFdBdQ0hV0hB1W_bbUTOoVPPG8x7HUoDsisPyLdMJ5zPcMKWWkwxsA4dRVgTMkJLYBuYIn--ldnkNpbqVd7pB8Ws"/>
+<span class="text-caption font-caption text-outline">Posted by David Chen • 1 week ago</span>
+</div>
+</div>
+</article>
+<!-- Newsletter Card 3 -->
+<article class="group grid grid-cols-1 md:grid-cols-5 gap-8 bg-surface-container-lowest p-6 rounded-xl border border-outline-variant hover:shadow-xl transition-shadow">
+<div class="md:col-span-2 overflow-hidden rounded-lg aspect-[4/3]">
+<img alt="Campus Life" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="An expansive view of an open-air campus plaza with modern architectural buildings and students walking between classes. The lighting is late afternoon golden hour, creating long shadows and a serene, aspirational academic atmosphere. The color palette is warm but grounded in neutral grays and whites." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdW0oOrWyEvhEyv9pylT5K6nDf9Su382CoDezHdDRTu-M1C9t2-kt0oN47lMlkD7FF4lKzintgcOdwCAmkTyhA3NfOdm3Fd5qYwiwKrgGc7m7cWTvrL2By0S6R5VfLGRTN4wHCHyOsKPsUTAOWGCWUhaMFAOpRI1B5WlWczRyhVJTHcoAXDYDBXk2VCRLs0ZevZlhjwQmWi52ie2FSd6sixiSJ2eP3sHA9niyycdvOpOj-YK6ps3IFnwejCI7ty1caGFUwScZFRsg"/>
+</div>
+<div class="md:col-span-3 flex flex-col justify-between py-2">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="text-secondary font-label-md text-label-md">Departments</span>
+<button class="flex items-center gap-1 text-secondary font-label-md text-label-md hover:underline">
+<span class="material-symbols-outlined text-[18px]" data-icon="person_add">person_add</span>
+                                    Follow
+                                </button>
+</div>
+<h2 class="font-headline-md text-headline-md mb-3 group-hover:text-secondary transition-colors">Architecture Dept Unveils Sustainable Urban Living Initiative</h2>
+<p class="text-on-surface-variant font-body-md text-body-md line-clamp-3 mb-4">The 'Green Spine' project aims to transform city planning through bio-integrated structural design, featuring a prototype pavilion built entirely from recycled materials.</p>
+</div>
+<div class="flex items-center gap-3">
+<img alt="Poster" class="w-8 h-8 rounded-full" data-alt="Portrait of a professional woman in a bright, modern studio environment. She is surrounded by architectural models and blueprints, projecting creativity and institutional leadership. The lighting is balanced and clear, emphasizing a sophisticated corporate yet creative academic style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlraS4b7actFFQFPSsdI63bC-vH_7IBy9LnyvS2P8O5LVbWxbl3e9BatNRsIW5Bl6kTX7n2vBEnRKAMN5Bscslz6BnStne1MFRF6AfF-XYZ47cFZpxiboP20FzCGbNaOApId1M42BuN-c8OorgzntPja_tpC1X92H3dLNtApqZX0VUoMZP7LbrWHxnDej9H5x_xs7yVn3c7-tGAhzB-hlSLcwuB9hld00xlGrQuazKIqjbMkTWsBq9vmHaIqjfyTCyMmk_TfPJycI"/>
+<span class="text-caption font-caption text-outline">Posted by Prof. Sarah Jenkins • 2 weeks ago</span>
+</div>
+</div>
+</article>
+</div>
+<!-- Sidebar -->
+<aside class="lg:col-span-4 space-y-gutter">
+<!-- CTA: Student Submission -->
+<div class="bg-primary-container text-on-primary-container p-8 rounded-xl relative overflow-hidden">
+<div class="relative z-10">
+<h3 class="font-headline-md text-headline-md mb-4 text-white">Have an insight to share?</h3>
+<p class="font-body-md text-body-md text-white/80 mb-6">Contribute your research, department news, or personal achievements to the next Academic Insight digest.</p>
+<button class="w-full bg-secondary-container text-on-secondary-container py-3 rounded-lg font-label-md text-label-md hover:opacity-90 transition-opacity">Submit Your Story</button>
+</div>
+<!-- Abstract decorative element -->
+<div class="absolute -right-12 -bottom-12 w-48 h-48 bg-secondary/20 rounded-full blur-3xl"></div>
+</div>
+<!-- Trending Topics -->
+<div class="bg-surface-container-low p-8 rounded-xl border border-outline-variant">
+<h3 class="font-label-md text-label-md text-outline uppercase mb-6 tracking-widest">Trending Topics</h3>
+<div class="flex flex-wrap gap-2">
+<span class="bg-surface-container px-3 py-1 rounded-full text-caption font-caption text-on-surface-variant cursor-pointer hover:bg-outline-variant transition-colors">#QuantumEthics</span>
+<span class="bg-surface-container px-3 py-1 rounded-full text-caption font-caption text-on-surface-variant cursor-pointer hover:bg-outline-variant transition-colors">#BioFoundries</span>
+<span class="bg-surface-container px-3 py-1 rounded-full text-caption font-caption text-on-surface-variant cursor-pointer hover:bg-outline-variant transition-colors">#AIinClassroom</span>
+<span class="bg-surface-container px-3 py-1 rounded-full text-caption font-caption text-on-surface-variant cursor-pointer hover:bg-outline-variant transition-colors">#SustainableArch</span>
+<span class="bg-surface-container px-3 py-1 rounded-full text-caption font-caption text-on-surface-variant cursor-pointer hover:bg-outline-variant transition-colors">#ClimateResilience</span>
+</div>
+</div>
+<!-- Top Contributors -->
+<div class="bg-surface-container-low p-8 rounded-xl border border-outline-variant">
+<h3 class="font-label-md text-label-md text-outline uppercase mb-6 tracking-widest">Top Contributors</h3>
+<ul class="space-y-6">
+<li class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-variant overflow-hidden">
+<img alt="User" data-alt="Portrait of a young woman with a focused, intelligent expression in a modern office. The image style is clean, editorial, and professional with soft directional lighting. The color palette consists of whites, light grays, and deep blues." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBePvHZkWOmbzNBX0OMWlzzOR3LQJhhpash8mAtKIVJX4xY9fGdugiaHv4SUjhPMUOmCa4e1by_6mUDUO3fH18PgwbmgKpYOZKnTRH9TCixuztboEzjpjEoXJbJOAjcWDKy-qhm1ClAibLjQbOp0dcZOKHKzBU6zEd6YwqdCM3ImFjZXkRqQ_rC-IeZhonCbDmMWuqOFX6YG2Lq7cNaC52E31u5p-J1z22G1iV5CzGcMMLpxLBFJmspp755elrAHrCf-oHF27n0Vbs"/>
+</div>
+<div>
+<p class="font-label-md text-label-md">Prof. Linda Gray</p>
+<p class="text-caption font-caption text-on-surface-variant">Social Sciences</p>
+</div>
+</div>
+<span class="text-secondary font-label-md text-label-md">12 posts</span>
+</li>
+<li class="flex items-center justify-between border-t border-outline-variant/30 pt-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-variant overflow-hidden">
+<img alt="User" data-alt="Portrait of a male researcher in his 30s with a professional yet approachable demeanor. He is in a modern office with blurred academic credentials on the wall. The style is crisp and modern with a focus on institutional authority and clarity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbg3DJHF3LuU3MWcMpt_mXRgRCaCZIGUU1G2IfJdl0e3WpmOmcpwtN7ol-vjKNnQa4UK6WKkQ5VnYy38iBa4AD6DFAinl-avnfot6noY-HF28R74lUCfyrQutMUs4o4eKCtDZfSD-dhkwrGa0v0eQRz32KyqfHKd5mA5oL6jzfJwEjuE8RoUZlMsjMVniLGRa7ISgFVSz3Ell74wcu309v9Z0olhTg2eRlcVEsAnyF234n_HZjk5v3VFCBp9C7MXknowNVM9_NDss"/>
+</div>
+<div>
+<p class="font-label-md text-label-md">Marcus Thorne</p>
+<p class="text-caption font-caption text-on-surface-variant">Engineering</p>
+</div>
+</div>
+<span class="text-secondary font-label-md text-label-md">9 posts</span>
+</li>
+<li class="flex items-center justify-between border-t border-outline-variant/30 pt-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-variant overflow-hidden">
+<img alt="User" data-alt="Portrait of a young female student with a creative and curious look. She is in a workshop environment with design tools blurred in the background. The aesthetic is clean, well-lit, and represents the vibrant intellectual life of a modern university." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBndREr_a0y_PrXqUHtv70P1XkpIboFOaHbWVBixHaMGNnbV6ATbvdfURCH2Ke3fKUo8i2_nIT4ktpnOUZwnn9Xvy3uLhm3XtbyxjTTEI4o-Q4VAphzOPQVzLnXwvo8o89NMV1SWcXYOO1BF3tm9mkuyMTCjjfNxc85qWO7bWqEeOyhPzduMK-GnB3PLMwfqQQA0Mt1DAJCnLc5SnPYw0ALCZzrFUehl_d-MXudEo-zYIxLT10mVzZhS-MCacERScHsaxZTlz2AuS8"/>
+</div>
+<div>
+<p class="font-label-md text-label-md">Zoe Fontaine</p>
+<p class="text-caption font-caption text-on-surface-variant">Arts &amp; Media</p>
+</div>
+</div>
+<span class="text-secondary font-label-md text-label-md">7 posts</span>
+</li>
+</ul>
+<button class="w-full mt-8 border border-secondary text-secondary py-2 rounded-lg font-label-md text-label-md hover:bg-secondary/5 transition-colors">View All Faculty</button>
+</div>
+</aside>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-highest dark:bg-inverse-surface border-t border-outline-variant dark:border-outline">
+<div class="w-full py-section-gap px-margin-desktop max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+<div class="md:col-span-2">
+<h2 class="font-headline-md text-headline-md text-on-surface dark:text-inverse-on-surface mb-6">Academic Insight</h2>
+<p class="text-on-surface-variant dark:text-surface-variant font-body-md text-body-md max-w-sm">Elevating institutional achievements and fostering a culture of research transparency across all departments.</p>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-on-surface dark:text-inverse-on-surface uppercase mb-6">Resources</h4>
+<ul class="space-y-4">
+<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary transition-colors font-body-md text-body-md" href="#">Institutional Resources</a></li>
+<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary transition-colors font-body-md text-body-md" href="#">Privacy Policy</a></li>
+<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary transition-colors font-body-md text-body-md" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-on-surface dark:text-inverse-on-surface uppercase mb-6">Support</h4>
+<ul class="space-y-4">
+<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary transition-colors font-body-md text-body-md" href="#">Accessibility</a></li>
+<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary transition-colors font-body-md text-body-md" href="#">Contact Us</a></li>
+</ul>
+</div>
+</div>
+<div class="pt-12 border-t border-outline-variant/30 flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="text-caption font-caption text-on-surface-variant dark:text-surface-variant">© 2024 Institutional Press. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="text-on-surface-variant hover:text-secondary" href="#"><span class="material-symbols-outlined" data-icon="share">share</span></a>
+<a class="text-on-surface-variant hover:text-secondary" href="#"><span class="material-symbols-outlined" data-icon="rss_feed">rss_feed</span></a>
+<a class="text-on-surface-variant hover:text-secondary" href="#"><span class="material-symbols-outlined" data-icon="mail">mail</span></a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+        // Micro-interactions
+        document.querySelectorAll('article').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-4px)';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0)';
+            });
+        });
+
+        // Search Bar Focus Effect
+        const searchInput = document.querySelector('input[type="text"]');
+        const searchContainer = searchInput.parentElement;
+        searchInput.addEventListener('focus', () => {
+            searchContainer.classList.add('border-secondary', 'ring-2', 'ring-secondary/20');
+        });
+        searchInput.addEventListener('blur', () => {
+            searchContainer.classList.remove('border-secondary', 'ring-2', 'ring-secondary/20');
+        });
+    </script>
+</body></html>

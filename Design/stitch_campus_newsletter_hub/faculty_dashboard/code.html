@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Faculty Portal | Academic Insight</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Newsreader:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-lowest": "#ffffff",
+                        "surface": "#f7f9fb",
+                        "on-surface": "#191c1e",
+                        "primary-fixed-dim": "#bec6e0",
+                        "on-secondary": "#ffffff",
+                        "surface-tint": "#565e74",
+                        "outline": "#76777d",
+                        "on-secondary-container": "#006f66",
+                        "tertiary-container": "#271901",
+                        "on-secondary-fixed": "#00201d",
+                        "tertiary-fixed": "#fcdeb5",
+                        "on-error": "#ffffff",
+                        "surface-bright": "#f7f9fb",
+                        "inverse-surface": "#2d3133",
+                        "background": "#f7f9fb",
+                        "on-primary-fixed": "#131b2e",
+                        "tertiary-fixed-dim": "#dec29a",
+                        "on-tertiary": "#ffffff",
+                        "primary": "#000000",
+                        "inverse-primary": "#bec6e0",
+                        "surface-container": "#eceef0",
+                        "outline-variant": "#c6c6cd",
+                        "primary-container": "#131b2e",
+                        "on-tertiary-fixed": "#271901",
+                        "on-error-container": "#93000a",
+                        "secondary": "#006a61",
+                        "surface-variant": "#e0e3e5",
+                        "on-primary": "#ffffff",
+                        "inverse-on-surface": "#eff1f3",
+                        "on-primary-fixed-variant": "#3f465c",
+                        "secondary-container": "#86f2e4",
+                        "on-primary-container": "#7c839b",
+                        "tertiary": "#000000",
+                        "on-secondary-fixed-variant": "#005049",
+                        "on-surface-variant": "#45464d",
+                        "secondary-fixed": "#89f5e7",
+                        "on-tertiary-fixed-variant": "#574425",
+                        "surface-dim": "#d8dadc",
+                        "surface-container-high": "#e6e8ea",
+                        "surface-container-highest": "#e0e3e5",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-container": "#98805d",
+                        "primary-fixed": "#dae2fd",
+                        "surface-container-low": "#f2f4f6",
+                        "error": "#ba1a1a",
+                        "secondary-fixed-dim": "#6bd8cb",
+                        "on-background": "#191c1e"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "base": "8px",
+                        "container-max": "1280px",
+                        "margin-desktop": "40px",
+                        "gutter": "24px",
+                        "margin-mobile": "16px",
+                        "section-gap": "80px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Inter"],
+                        "caption": ["Inter"],
+                        "headline-md": ["Newsreader"],
+                        "body-md": ["Inter"],
+                        "display-lg": ["Newsreader"],
+                        "headline-lg-mobile": ["Newsreader"],
+                        "headline-lg": ["Newsreader"],
+                        "label-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "caption": ["12px", {"lineHeight": "16px", "fontWeight": "400"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "500"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #f7f9fb;
+        }
+    </style>
+</head>
+<body class="font-body-md text-on-surface">
+<!-- SideNavBar (Shared Component) -->
+<aside class="fixed left-0 top-0 h-full flex flex-col py-8 bg-surface-container-low w-64 border-r border-outline-variant">
+<div class="px-6 mb-10">
+<h1 class="font-headline-md text-headline-md text-on-surface font-bold">Faculty Portal</h1>
+<p class="font-label-md text-label-md text-on-surface-variant mt-1">Administrative Access</p>
+</div>
+<nav class="flex-1 space-y-1">
+<a class="text-on-surface-variant p-4 flex items-center gap-base hover:bg-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+<span class="font-label-md text-label-md">Dashboard</span>
+</a>
+<a class="text-on-surface-variant p-4 flex items-center gap-base hover:bg-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="insights">insights</span>
+<span class="font-label-md text-label-md">Analytics</span>
+</a>
+<!-- Active State: Manage Posts -->
+<a class="text-secondary font-bold border-r-4 border-secondary p-4 flex items-center gap-base transition-transform scale-95" href="#">
+<span class="material-symbols-outlined" data-icon="edit_note">edit_note</span>
+<span class="font-label-md text-label-md">Manage Posts</span>
+</a>
+<a class="text-on-surface-variant p-4 flex items-center gap-base hover:bg-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="groups">groups</span>
+<span class="font-label-md text-label-md">Subscribers</span>
+</a>
+<a class="text-on-surface-variant p-4 flex items-center gap-base hover:bg-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span class="font-label-md text-label-md">Settings</span>
+</a>
+</nav>
+<div class="px-4 mt-auto">
+<button class="w-full bg-secondary text-on-secondary py-3 rounded flex items-center justify-center gap-2 font-label-md text-label-md hover:opacity-90 transition-opacity">
+<span class="material-symbols-outlined" data-icon="add">add</span>
+                Create Newsletter
+            </button>
+<div class="flex items-center gap-3 mt-8 pt-6 border-t border-outline-variant">
+<img alt="Faculty Profile" class="w-10 h-10 rounded-full object-cover" data-alt="A professional headshot of a distinguished academic professor in their late 40s wearing a dark navy blazer and a white shirt. The background is a soft-focus library with leather-bound books, creating an atmosphere of intellectual authority and institutional excellence. The lighting is crisp and scholarly, adhering to a high-contrast corporate modern aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7Tl-8787CLy4xg5vYd9Sk0HnZRqi4tbhkbyWBjY62Kh9uriAhWUHw2ok-NzwRY5UbVpEZXE-S7CKjZq35XG22FVxIJLzhgzrQDll0K0aSV1SgMzqGTVFm_pCJeYBL5N4OASJ6ScTFOYAaW8OBj0WxP0bRgoF0jQwisyzBa1DdVmlK9tZaiB0AEo8XGHkX2oqhZx-UZ7yVjhixHsKhuawafbLtOaXTXlTolRy0Y6dDHlxIC8xY91OJw0K48p1c34tE9NyKOHyxGs8"/>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Dr. Julian Vance</p>
+<p class="font-caption text-caption text-on-surface-variant">Lead Editor</p>
+</div>
+</div>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="ml-64 min-h-screen p-margin-desktop max-w-container-max mx-auto">
+<!-- Header Section -->
+<header class="flex justify-between items-end mb-10">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Manage Student Requests</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Review and moderate upcoming contributions from the student body.</p>
+</div>
+<div class="flex gap-4">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline" data-icon="search">search</span>
+<input class="pl-10 pr-4 py-2 bg-surface-container-lowest border border-outline-variant rounded-lg font-body-md text-body-md focus:outline-none focus:border-secondary transition-colors w-64" placeholder="Search requests..." type="text"/>
+</div>
+</div>
+</header>
+<!-- Summary Stats Bento Grid -->
+<section class="grid grid-cols-12 gap-gutter mb-12">
+<div class="col-span-4 bg-surface-container-lowest border border-outline-variant p-6 rounded-xl shadow-sm">
+<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Total Active Posts</p>
+<div class="flex items-baseline gap-2 mt-2">
+<span class="font-display-lg text-display-lg text-on-surface">1,284</span>
+<span class="text-secondary font-label-md">+12%</span>
+</div>
+<div class="mt-4 h-1 w-full bg-surface-variant rounded-full overflow-hidden">
+<div class="bg-secondary h-full w-3/4"></div>
+</div>
+</div>
+<div class="col-span-4 bg-surface-container-lowest border border-outline-variant p-6 rounded-xl shadow-sm">
+<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">New Requests</p>
+<div class="flex items-baseline gap-2 mt-2">
+<span class="font-display-lg text-display-lg text-secondary">24</span>
+<span class="font-label-md text-on-surface-variant">Pending review</span>
+</div>
+<p class="mt-4 font-caption text-caption text-on-surface-variant">Last submission: 14 mins ago</p>
+</div>
+<div class="col-span-4 bg-primary-container p-6 rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<p class="font-label-md text-label-md text-on-primary-container uppercase tracking-wider">Editorial Health</p>
+<p class="font-headline-md text-headline-md text-on-primary mt-1">Excellent</p>
+</div>
+<div class="flex gap-1">
+<span class="material-symbols-outlined text-secondary" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-secondary" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-secondary" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-secondary" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-on-primary-container" data-icon="star">star</span>
+</div>
+</div>
+</section>
+<!-- Student Requests Table/List -->
+<section class="bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden shadow-sm">
+<div class="px-6 py-4 border-b border-outline-variant flex justify-between items-center bg-surface-container-low">
+<h3 class="font-label-md text-label-md text-on-surface">Queue (24)</h3>
+<div class="flex gap-2">
+<button class="p-1 hover:bg-surface-variant rounded transition-colors">
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="filter_list">filter_list</span>
+</button>
+<button class="p-1 hover:bg-surface-variant rounded transition-colors">
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="more_vert">more_vert</span>
+</button>
+</div>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="border-b border-outline-variant">
+<th class="px-6 py-4 font-label-md text-label-md text-on-surface-variant">Preview</th>
+<th class="px-6 py-4 font-label-md text-label-md text-on-surface-variant">Proposed Title</th>
+<th class="px-6 py-4 font-label-md text-label-md text-on-surface-variant">Student Details</th>
+<th class="px-6 py-4 font-label-md text-label-md text-on-surface-variant">Department</th>
+<th class="px-6 py-4 font-label-md text-label-md text-on-surface-variant text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant">
+<!-- Row 1 -->
+<tr class="hover:bg-surface transition-colors group">
+<td class="px-6 py-4">
+<img alt="Banner Preview" class="w-24 h-14 object-cover rounded shadow-sm border border-outline-variant" data-alt="A clean, scientific macro photograph of a laboratory petri dish with intricate crystalline structures forming. The lighting is high-key and surgical, using cool blue and clinical white tones. The composition is minimalist and academic, fitting the intellectual rigor of a modern university journal. High-resolution editorial style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWTjCQLVacyZSbaoDM6Gq4tyCEFS0vKFSZRhI2c50VkhBW744cm9G1lGWN7EtykTt_FkH8kQdy-ngtsMSi5KzFBxfMJ1iQKYU_WI4XAl6eX9UjYw8rGPi-7d5T7KCcDSMzTFQMytfqPpbRNJqG23ty7GIngJZLzpMqhghTFWP3njytuaUn56AmyH8igZkAfOLDOG9V9TD47PBRVEL86DDwm3kF-BRgNa08ps0FwAByD2v_xQBDDLR68sAzHnrFqZ8Ak8a2nCP8sjQ"/>
+</td>
+<td class="px-6 py-4">
+<p class="font-headline-md text-headline-md text-on-surface max-w-xs leading-tight">Graphene Synthesis: New Paradigms in Energy Storage</p>
+<p class="font-caption text-caption text-on-surface-variant mt-1">Submitted 2 hours ago • 8 min read</p>
+</td>
+<td class="px-6 py-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary-fixed flex items-center justify-center font-label-md">ES</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Elena Sidorov</p>
+<p class="font-caption text-caption text-on-surface-variant">Senior Research Fellow</p>
+</div>
+</div>
+</td>
+<td class="px-6 py-4">
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full font-label-md text-[10px] uppercase tracking-widest">Engineering</span>
+</td>
+<td class="px-6 py-4 text-right">
+<div class="flex justify-end gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="px-3 py-1.5 border border-secondary text-secondary rounded font-label-md text-label-md hover:bg-secondary hover:text-on-secondary transition-all">Approve &amp; Edit</button>
+<button class="p-1.5 text-on-surface-variant hover:text-error transition-colors">
+<span class="material-symbols-outlined" data-icon="delete">delete</span>
+</button>
+<button class="p-1.5 text-on-surface-variant hover:text-secondary transition-colors">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface transition-colors group">
+<td class="px-6 py-4">
+<img alt="Banner Preview" class="w-24 h-14 object-cover rounded shadow-sm border border-outline-variant" data-alt="A dramatic interior shot of a vast classical library with towering mahogany shelves filled with ancient books. Soft sunlight streams through high arched windows, illuminating dust motes and heavy oak tables. The mood is one of quiet contemplation and scholarly tradition. The image uses a rich palette of deep browns and warm golds, maintaining a professional editorial aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDueoJJfvD3QahXsqq9J0x4n8ytOQd69eJ1paU32geWze_7aDMpuO6y8ikVg1KMA_HSv3IEVcIInsMn2zMBdDCzLoDFmcfSQiEhMptA69F3uIXo77Mz8wnrjmZ-xtL9bU6lWi9nWYw1E0fDMbC75BeakFvdnI-8PKdau4vWGQnePGvzyh-mq32v-gt0GnSGTPfj7fvnXA4zrmm5QT_knTXt9iedtxWSOAcmlc661qSMjk2vjVPPSNEyVIBthwkHHELnaq7Xmp3tJ5E"/>
+</td>
+<td class="px-6 py-4">
+<p class="font-headline-md text-headline-md text-on-surface max-w-xs leading-tight">The Digital Archiving of 18th Century Manuscripts</p>
+<p class="font-caption text-caption text-on-surface-variant mt-1">Submitted 5 hours ago • 12 min read</p>
+</td>
+<td class="px-6 py-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-variant text-on-surface-variant flex items-center justify-center font-label-md">MW</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Marcus Weber</p>
+<p class="font-caption text-caption text-on-surface-variant">PhD Candidate</p>
+</div>
+</div>
+</td>
+<td class="px-6 py-4">
+<span class="bg-surface-variant text-on-surface-variant px-3 py-1 rounded-full font-label-md text-[10px] uppercase tracking-widest">History</span>
+</td>
+<td class="px-6 py-4 text-right">
+<div class="flex justify-end gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="px-3 py-1.5 border border-secondary text-secondary rounded font-label-md text-label-md hover:bg-secondary hover:text-on-secondary transition-all">Approve &amp; Edit</button>
+<button class="p-1.5 text-on-surface-variant hover:text-error transition-colors">
+<span class="material-symbols-outlined" data-icon="delete">delete</span>
+</button>
+<button class="p-1.5 text-on-surface-variant hover:text-secondary transition-colors">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface transition-colors group">
+<td class="px-6 py-4">
+<img alt="Banner Preview" class="w-24 h-14 object-cover rounded shadow-sm border border-outline-variant" data-alt="A modern data visualization graphic featuring neon-lit lines and glowing nodes across a dark background, representing complex interconnected networks. The visual style is sleek, corporate, and technological, using a palette of deep navy, vibrant teals, and subtle electric blues. The lighting is low-key with glowing accents, emphasizing a narrative of futuristic analytics and big data." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaujG6d2lyuQNGpFCdTIO4zH3T4FZDRnqGj8mLBOpF2Lw8lQtJomHY8iRvXQoc0SJSqvq76jYMHZF_ON_5Yxt7FDKxb3P9WrYtP07TfrkSaxiNotJiw8l-5mgSLqwhLBZowKVmUSVKyJ2WyYpdyF208C9tu4yG8fNIH_3llxYYHF7qGeTTLIAig8VzKankw6UTkT3BhbuCuxq-mXvyxYvCL6aiaX57giaBvc9XpFvAOjsfJtoqdIwXFZ3JMuwgQc6VI0vD93MCR-o"/>
+</td>
+<td class="px-6 py-4">
+<p class="font-headline-md text-headline-md text-on-surface max-w-xs leading-tight">Algorithmic Bias in Neural Network Training Sets</p>
+<p class="font-caption text-caption text-on-surface-variant mt-1">Submitted 1 day ago • 15 min read</p>
+</td>
+<td class="px-6 py-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary-fixed flex items-center justify-center font-label-md">JL</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Jia Li</p>
+<p class="font-caption text-caption text-on-surface-variant">Masters Student</p>
+</div>
+</div>
+</td>
+<td class="px-6 py-4">
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full font-label-md text-[10px] uppercase tracking-widest">CS</span>
+</td>
+<td class="px-6 py-4 text-right">
+<div class="flex justify-end gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="px-3 py-1.5 border border-secondary text-secondary rounded font-label-md text-label-md hover:bg-secondary hover:text-on-secondary transition-all">Approve &amp; Edit</button>
+<button class="p-1.5 text-on-surface-variant hover:text-error transition-colors">
+<span class="material-symbols-outlined" data-icon="delete">delete</span>
+</button>
+<button class="p-1.5 text-on-surface-variant hover:text-secondary transition-colors">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="px-6 py-4 bg-surface-container-low border-t border-outline-variant flex justify-between items-center">
+<span class="font-caption text-caption text-on-surface-variant">Showing 3 of 24 requests</span>
+<div class="flex gap-1">
+<button class="p-2 border border-outline-variant rounded hover:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined text-sm" data-icon="chevron_left">chevron_left</span>
+</button>
+<button class="p-2 border border-outline-variant rounded bg-secondary text-on-secondary">1</button>
+<button class="p-2 border border-outline-variant rounded hover:bg-surface-variant transition-colors">2</button>
+<button class="p-2 border border-outline-variant rounded hover:bg-surface-variant transition-colors">3</button>
+<button class="p-2 border border-outline-variant rounded hover:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined text-sm" data-icon="chevron_right">chevron_right</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Contextual Help/Footer -->
+<footer class="mt-section-gap pt-8 border-t border-outline-variant flex justify-between items-center">
+<p class="font-caption text-caption text-on-surface-variant">© 2024 Institutional Press. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="font-caption text-caption text-on-surface-variant hover:text-secondary transition-colors" href="#">Privacy Policy</a>
+<a class="font-caption text-caption text-on-surface-variant hover:text-secondary transition-colors" href="#">Terms of Service</a>
+<a class="font-caption text-caption text-on-surface-variant hover:text-secondary transition-colors" href="#">Contact Support</a>
+</div>
+</footer>
+</main>
+<!-- Micro-interaction Script -->
+<script>
+        document.querySelectorAll('tr').forEach(row => {
+            row.addEventListener('mouseenter', () => {
+                row.style.transform = 'translateX(4px)';
+            });
+            row.addEventListener('mouseleave', () => {
+                row.style.transform = 'translateX(0px)';
+            });
+        });
+    </script>
+</body></html>

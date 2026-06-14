@@ -1,0 +1,236 @@
+CE CONNECT - FACULTY CLARIFICATION MEETING
+===========================================
+Date: [Fill in meeting date]
+Project Team: [Your names]
+
+QUESTIONS TO ASK FACULTY
+=========================
+
+1. PROJECT SCOPE & REQUIREMENTS
+   ------------------------------
+   Q1: What are the MUST-HAVE features for the July 4th review?
+   Q2: What percentage of completion are you expecting by July 4th?
+   Q3: Is PDF generation of newsletters mandatory or optional?
+   Q4: Do we need email notification features (sending newsletters via email)?
+   Q5: Should alumni/students be able to LOGIN or just VIEW newsletters?
+   Q6: Do you want separate sections for:
+       - Student Achievements
+       - Faculty Accomplishments  
+       - Placement Records
+       - Technical Events
+       - Research Publications
+       - Alumni Success Stories
+       OR can we use a category/tag system?
+
+2. TECHNICAL CONSTRAINTS
+   ----------------------
+   Q7: Can we use FREE cloud services (Vercel, Render, Supabase, Cloudinary)?
+       OR must everything be self-hosted?
+   Q8: Any restrictions on technology stack? (We plan React + Node.js + PostgreSQL)
+   Q9: Should it work on mobile browsers or desktop only is fine?
+   Q10: Do you need the source code on GitHub or CD/USB?
+
+3. DEPLOYMENT & DEMO
+   ------------------
+   Q11: Must the project be LIVE (deployed online) for July 4th demo?
+   Q12: Will you test it yourselves or just watch our demo?
+   Q13: Should we create demo/dummy data or will you provide real department data?
+
+4. USER ROLES & PERMISSIONS
+   -------------------------
+   Q14: What user roles do you need?
+       - Admin only?
+       - Admin + Faculty?
+       - Admin + Faculty + Students (view only)?
+   Q15: Can multiple admins/faculty create newsletters or just one admin?
+   Q16: Should there be approval workflow (draft → review → publish)?
+
+5. CONTENT REQUIREMENTS
+   ---------------------
+   Q17: What should a newsletter contain minimum?
+       - Title, description, images?
+       - Date, author name?
+       - Attachments/PDFs?
+   Q18: Maximum image/file size limits?
+   Q19: Should old newsletters be editable or locked after publishing?
+
+6. EVALUATION CRITERIA (IMPORTANT!)
+   ---------------------------------
+   Q20: How will you evaluate the July 4th submission?
+       - Features completed?
+       - Code quality?
+       - UI/UX design?
+       - Documentation?
+   Q21: What documents do you need by July 4th?
+       - SRS (Software Requirement Specification)?
+       - Design diagrams?
+       - User manual?
+   Q22: Will there be a viva/Q&A session on July 4th?
+
+
+
+PROPOSED PLAN TO PRESENT TO FACULTY
+====================================
+
+PROJECT: CE Connect - Digital Newsletter Management Platform
+
+TECHNOLOGY STACK:
+-----------------
+Frontend:  React.js + TailwindCSS
+Backend:   Node.js + Express.js  
+Database:  PostgreSQL (Supabase - Free Cloud)
+Storage:   Cloudinary (Free - for images)
+Deployment: Vercel (Frontend) + Render (Backend)
+
+WHY THIS STACK?
+- Industry standard and well-documented
+- Free hosting options available
+- Scalable for future expansion
+- Good for academic learning
+
+
+PROPOSED FEATURES & FUNCTIONALITY
+==================================
+
+PHASE 1: FOR JULY 4TH DEMO (CORE FEATURES)
+-------------------------------------------
+
+1. USER AUTHENTICATION & AUTHORIZATION
+   - User Registration (Admin/Faculty)
+   - Login/Logout functionality
+   - Role-based access control
+   - Password encryption (security)
+
+2. NEWSLETTER MANAGEMENT (BASIC CRUD)
+   - Create Newsletter
+     * Title, content (rich text editor)
+     * Category selection
+     * Upload cover image
+     * Save as draft or publish
+   - View All Newsletters (list view)
+   - View Single Newsletter (detailed view)
+   - Edit Newsletter (by creator/admin only)
+   - Delete Newsletter (admin only)
+
+3. CATEGORIES
+   - Predefined categories:
+     * Student Achievements
+     * Faculty Accomplishments
+     * Placement Records
+     * Technical Events & Workshops
+     * Research Publications
+     * Alumni Success Stories
+     * General Announcements
+
+4. ARCHIVE & SEARCH
+   - View all published newsletters
+   - Filter by category
+   - Basic search by title
+   - Sort by date (newest first)
+
+5. RESPONSIVE DESIGN
+   - Works on desktop browsers
+   - Mobile-friendly layout
+
+6. DEPLOYMENT
+   - Live accessible URL
+   - Stable and working demo
+
+
+PHASE 2: POST JULY 4TH (ADDITIONAL FEATURES)
+---------------------------------------------
+
+7. ADVANCED FEATURES (if time permits)
+   - PDF Export of newsletters
+   - Email notifications to subscribers
+   - View count analytics
+   - Image gallery for each newsletter
+   - Comments section (optional)
+   - Newsletter templates
+
+8. ADMIN DASHBOARD
+   - Statistics (total newsletters, by category)
+   - Recent activity
+   - User management
+
+9. IMPROVED UI/UX
+   - Better design and animations
+   - Dark mode (optional)
+   - Loading states and error handling
+
+10. DOCUMENTATION
+    - User manual
+    - API documentation
+    - Deployment guide
+
+
+MINIMUM VIABLE PRODUCT (MVP) FOR JULY 4TH:
+------------------------------------------
+✅ Working login system with roles
+✅ Create newsletter with text + image
+✅ View list of all newsletters  
+✅ View individual newsletter details
+✅ Filter newsletters by category
+✅ Responsive design
+✅ Deployed and accessible online
+✅ Demo data populated
+
+This ensures we have a WORKING, DEPLOYED system to demonstrate.
+
+
+TEAM STRUCTURE (3 Members):
+---------------------------
+Member 1: Backend Development + Database
+Member 2: Frontend Development (Core)
+Member 3: Frontend Development (Features) + Deployment
+
+(We will provide detailed work division after requirements confirmation)
+
+
+TIMELINE:
+---------
+Week 1 (June 1-7):    Project setup, requirement finalization, architecture design
+Week 2 (June 8-14):   Backend APIs + Database + Authentication
+Week 3 (June 15-21):  Frontend development + Integration
+Week 4 (June 22-28):  Testing, deployment, bug fixes
+Week 5 (June 29-Jul 3): Final polish, demo preparation, documentation
+
+Buffer: 3-4 days for unexpected issues
+
+
+DELIVERABLES FOR JULY 4TH:
+--------------------------
+1. Working deployed application (live URL)
+2. Source code (GitHub repository)
+3. Database schema documentation
+4. Basic user manual
+5. Presentation/Demo
+6. [Ask faculty what else they need]
+
+
+RISKS & MITIGATION:
+-------------------
+Risk 1: Free tier limitations
+        → Monitoring usage, have backup plans
+
+Risk 2: Deployment issues  
+        → Starting deployment early (Week 3)
+
+Risk 3: Team coordination
+        → Daily standups, shared GitHub repo, clear task division
+
+
+QUESTIONS FOR YOU (Faculty):
+-----------------------------
+[List the 22 questions from above section]
+
+
+REQUEST:
+--------
+Please confirm the scope and requirements so we can start 
+development immediately. We want to ensure we build exactly 
+what's expected.
+
+Thank you!
+
+---
